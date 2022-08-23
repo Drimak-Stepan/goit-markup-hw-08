@@ -1,0 +1,18 @@
+@import './utils/variables';
+@import './base/reset';
+@import './base/common';
+@import './utils/visually-hidden';
+
+@import './components/container';
+@import './components/section';
+@import './components/modal';
+
+@import './layout/header';
+@import './layout/decision';
+@import './layout/features';
+@import './layout/examples';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/filters';
+@import './layout/services';
+@import './layout/basement';
