@@ -5,15 +5,15 @@
 
     &__list{
         display: flex;
-        justify-content: center;
-        margin-bottom: 50px;    
+        flex-wrap:wrap;
+        row-gap: 15px;
+        margin-bottom: 40px;    
         }
 }
 
 .filters__item:not(:last-child){
     margin-right: 8px;
     }
-
 .filters__btn{
     cursor: pointer;
     display: block;
@@ -43,3 +43,19 @@
         
 }
 
+
+@media screen and (min-width:768px){
+    .filters__list{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        row-gap: 0px;    
+        }
+}
+
+@media screen and (min-width:1200px){
+    .filters__list{
+    margin-bottom: 50px;    
+    }
+
+}

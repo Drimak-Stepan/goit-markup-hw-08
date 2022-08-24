@@ -10,29 +10,22 @@
     background-color: var(--first-background);
     border-bottom: 1px solid #ECECEC;
 
-    & > .cap__container {   display: flex;
-                            align-items: center;}
 
-    &__list{display: flex;}
+    &__list{display: none;}
 
-    &__item:not(:last-child){margin-right: 50px;}
-
-    &__itemtoo:not(:last-child){margin-right: 30px;}
-
-    &__listtoo{ display: flex;
-                margin-left: auto;}
+    &__listtoo{display: none; 
+        }
         
     }
 
 .cap__logo{
     display: block;
-    margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 24px;
     font-family:$RalS;
     font-style: $SN;
     font-weight: $S7;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.1923;
     letter-spacing: 0.03em;
     color:#000000;
@@ -84,8 +77,8 @@
 .cap__email,
 .cap__tel{
     display: flex;
+    row-gap: 10px;
     align-items: center;
-    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
@@ -110,3 +103,32 @@
 
     &:focus,
     &:hover{fill:#2196F3;}}
+
+
+
+
+    @media screen and (min-width:768px){ 
+        
+        .cap__container {   display: flex;
+        align-items: center;
+    }
+        .cap__logo{
+            margin-right: auto;}
+        .cap__list{
+        display: flex;}
+    .cap__listtoo{   display:block; margin-left: auto;}
+    .cap__item:not(:last-child){margin-right: 50px;}
+    .cap__itemtoo:not(:last-child){margin-bottom: 10px;}}
+
+    @media screen and (min-width:1200px){
+        .cap__logo{font-size: 26px;
+            margin-right: 93px;}
+        .cap__listtoo{ display: flex;
+            margin-left: auto;}
+
+        .cap__itemtoo:not(:last-child){margin-right: 30px;}
+
+        .cap__email,
+        .cap__tel{padding: 32px 0;}   
+
+    }

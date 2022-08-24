@@ -336,33 +336,21 @@ main {
   background-color: var(--first-background);
   border-bottom: 1px solid #ECECEC;
 }
-.cap > .cap__container {
-  display: flex;
-  align-items: center;
-}
 .cap__list {
-  display: flex;
-}
-.cap__item:not(:last-child) {
-  margin-right: 50px;
-}
-.cap__itemtoo:not(:last-child) {
-  margin-right: 30px;
+  display: none;
 }
 .cap__listtoo {
-  display: flex;
-  margin-left: auto;
+  display: none;
 }
 
 .cap__logo {
   display: block;
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.1923;
   letter-spacing: 0.03em;
   color: #000000;
@@ -419,8 +407,8 @@ main {
 .cap__email,
 .cap__tel {
   display: flex;
+  row-gap: 10px;
   align-items: center;
-  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -453,6 +441,45 @@ main {
   fill: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .cap__container {
+    display: flex;
+    align-items: center;
+  }
+  .cap__logo {
+    margin-right: auto;
+  }
+  .cap__list {
+    display: flex;
+  }
+  .cap__listtoo {
+    display: block;
+    margin-left: auto;
+  }
+  .cap__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .cap__itemtoo:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cap__logo {
+    font-size: 26px;
+    margin-right: 93px;
+  }
+  .cap__listtoo {
+    display: flex;
+    margin-left: auto;
+  }
+  .cap__itemtoo:not(:last-child) {
+    margin-right: 30px;
+  }
+  .cap__email,
+.cap__tel {
+    padding: 32px 0;
+  }
+}
 .decision {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -511,9 +538,6 @@ main {
   margin-right: auto;
   background-color: var(--first-background);
 }
-.feature__list {
-  display: flex;
-}
 .feature__icon {
   display: flex;
   height: 120px;
@@ -531,6 +555,7 @@ main {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-title-color);
@@ -542,13 +567,36 @@ main {
   color: var(--accent-color);
 }
 
-.feature__item {
-  width: 270px;
-}
 .feature__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .feature__list .feature__item {
+    width: 354px;
+    margin: 0;
+  }
+  .feature__subtitle {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__list {
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+  .feature__item {
+    width: 270px;
+  }
+  .feature__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .examples {
   display: none;
   background-color: var(--first-background);
@@ -651,7 +699,7 @@ main {
   border-radius: 0px 0px 4px 4px;
 }
 .team__item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .soc {
@@ -768,8 +816,9 @@ main {
 }
 .filters__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  margin-bottom: 40px;
 }
 
 .filters__item:not(:last-child) {
@@ -801,14 +850,21 @@ main {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 30px;
+@media screen and (min-width: 768px) {
+  .filters__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    row-gap: 0px;
+  }
 }
-.services__item {
-  width: calc((100% - 60px) / 3);
+@media screen and (min-width: 1200px) {
+  .filters__list {
+    margin-bottom: 50px;
+  }
+}
+.services__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 .services__product {
   position: relative;
@@ -870,6 +926,25 @@ main {
   transform: translateY(0);
 }
 
+@media screen and (min-width: 768px) {
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .service__item {
+    width: calc((100% - 30px) / 2);
+  }
+  .services__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
 .basement {
   margin-right: auto;
   margin-left: auto;
