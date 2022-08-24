@@ -703,11 +703,11 @@ main {
   }
 }
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -716,14 +716,18 @@ main {
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .clients__item {
-  width: 170px;
   height: 92px;
 }
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 320px) {
+  .clients__item {
+    width: 210px;
+  }
 }
 
 .clients__link {
@@ -743,6 +747,21 @@ main {
   outline: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .clients__item {
+    width: 170px;
+  }
+}
 .filters {
   margin-left: auto;
   margin-right: auto;
