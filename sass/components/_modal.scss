@@ -29,8 +29,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    min-height: 581px;
-    min-width: 528px;
+    min-height: 609px;
+    min-width: 450px;
     padding: 40px;
     display: block;
     justify-content: flex-end;
@@ -67,6 +67,12 @@
     &__subform{margin-bottom: 10px; }
 
     &__coment{margin-bottom: 20px;}
+
+
+    @media screen and (min-width:1200px){
+        min-height: 581px;
+    min-width: 528px;
+    }
         }
 
 .modal__btn{
@@ -149,11 +155,16 @@
             font-family: $RobS;
             font-style: $SN;
             font-weight: $S4;
-            font-size: 12px;
-            line-height: 1.17px;
+            font-size: 14px;
+            line-height: 1.142px;
             letter-spacing: 0.01em;
             color: rgba(117, 117, 117, 0.5);}
+
+    
 }
+
+        @media screen and (min-width:1200px){
+    .modal__text::placeholder{font-size: 12px;line-height: 1.17px;}}
 
 .check{
     margin-bottom: 30px;
@@ -169,10 +180,12 @@
     font-family: $RobS;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575; 
+    @media screen and (min-width:1200px){
+        .check__text{font-size: 14px;line-height: 1.142px;}}
 
     .check__input:checked + & span {
         background-color: var(--active-color);
