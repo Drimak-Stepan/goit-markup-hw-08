@@ -1159,15 +1159,6 @@ main {
   padding-bottom: 60px;
   background-color: #2F303A;
 }
-.basement > .container {
-  display: flex;
-  align-items: baseline;
-}
-
-.contact {
-  display: block;
-  margin-right: 70px;
-}
 
 .basement--logo {
   display: inline-block;
@@ -1175,8 +1166,8 @@ main {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   outline: 1px solid;
@@ -1189,6 +1180,19 @@ main {
 }
 .basement--logo span {
   color: var(--active-color);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact__item:not(:last-child) {
@@ -1216,7 +1220,7 @@ main {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.33;
+  line-height: 1.71;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-only);
@@ -1226,6 +1230,13 @@ main {
 .contact__tel:hover {
   outline: transparent;
   color: var(--active-color);
+}
+
+.soc-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .soc-footer__title {
@@ -1263,8 +1274,9 @@ main {
 }
 
 .basement__form {
-  display: block;
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .basement__label {
@@ -1284,9 +1296,10 @@ main {
 }
 
 .basement__input {
-  margin-right: 12px;
+  display: block;
+  margin-bottom: 20px;
   padding: 15px 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: var(--first-background);
   background-color: transparent;
@@ -1313,13 +1326,11 @@ main {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.basement__email {
-  display: flex;
-}
-
 .basement__btn {
   display: flex;
   align-items: center;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0px 28px;
   height: 50px;
   cursor: pointer;
@@ -1344,4 +1355,51 @@ main {
 
 .basement__btn--icon {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .basement > .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement > .container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .contact {
+    align-items: flex-start;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .contact__list {
+    align-items: flex-start;
+  }
+  .soc-footer {
+    align-items: flex-start;
+    margin-bottom: 0px;
+  }
+  .basement--logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .basement__form {
+    display: block;
+    margin-left: auto;
+  }
+  .basement__email {
+    display: flex;
+  }
+  .basement__input {
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+  .basement__btn {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
