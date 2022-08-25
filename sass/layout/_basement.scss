@@ -131,7 +131,6 @@ margin-bottom: 60px;}
 .basement__input{display: block;
     margin-bottom: 20px;
     padding: 15px 16px;
-    width: 450px;
     height: 50px;
     color: var(--first-background);
     background-color: transparent;
@@ -166,6 +165,7 @@ margin-bottom: 60px;}
         margin-right: auto;
         margin-left: auto;
     padding: 0px 28px;
+
     height: 50px;
     cursor: pointer;
     font-family: $RobS;
@@ -192,6 +192,9 @@ margin-bottom: 60px;}
     margin-left: 10px;
 }
 
+@media screen and (min-width:480px){
+    .basement__input{width: 450px;}
+}
 
 @media screen and (min-width:768px){
     .basement>.container{
