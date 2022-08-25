@@ -4,13 +4,13 @@
     width: 100%;
     top: 0;
     left: 0;
-    min-height: 80px;
+    min-height: 60px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--first-background);
     border-bottom: 1px solid #ECECEC;
 
-
+    &__nav{display: none;}
     &__list{display: none;}
 
     &__listtoo{display: none; 
@@ -20,8 +20,8 @@
 
 .cap__logo{
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-family:$RalS;
     font-style: $SN;
     font-weight: $S7;
@@ -108,12 +108,15 @@
 
 
     @media screen and (min-width:768px){ 
-        
+        .cap{min-height: 60px;}
         .cap__container {   display: flex;
         align-items: center;
     }
-        .cap__logo{
+        .cap__logo{padding-top: 24px;
+            padding-bottom: 24px;
             margin-right: auto;}
+
+        .cap__nav{display: block;}    
         .cap__list{
         display: flex;}
     .cap__listtoo{   display:block; margin-left: auto;}
