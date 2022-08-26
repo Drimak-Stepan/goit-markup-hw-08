@@ -129,10 +129,10 @@ transition: fill var(--transition-only);
       outline-color:  transparent;
       transition: color var(--transition-only), outline-color var(--transition-only);
 
-    &:focus{outline-color:#188CE8;;
+    &:focus{outline-color:#188CE8;
         color: #188CE8;}
 
-    &:hover{color: #188CE8;;
+    &:hover{color: #188CE8;
   }}
 
 
@@ -153,5 +153,9 @@ transition: fill var(--transition-only);
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--active-color);
+    outline-color:  transparent;
+      transition: color var(--transition-only), outline-color var(--transition-only);
+
+    &:focus{outline-color:var(--active-color);}
   }
   
