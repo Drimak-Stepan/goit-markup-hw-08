@@ -78,12 +78,14 @@
     row-gap: 30px;}
     
     .services__item:not(:last-child){
-        margin-bottom: 0px;
+        margin-bottom: 0px;}
+        
+        .service__item{width: calc((100% - 60px)/2)
     }}
 
     @media screen and (min-width:1200px){
 
-
+        
     
         .service__item{width: calc((100% - 60px) / 3);}
     }
