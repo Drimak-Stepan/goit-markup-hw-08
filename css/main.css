@@ -683,13 +683,11 @@ main {
   }
 }
 .decision {
-  padding-top: 200px;
-  padding-bottom: 200px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #C4C4C4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-hw-04-bgr 1x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-hw-04-bgr-m1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -707,7 +705,33 @@ main {
   color: #FFFFFF;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .decision {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-hw-04-bgr-m2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .decision {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-hw-04-bgr-t1x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .decision {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-hw-04-bgr-t2x.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
+  .decision {
+    padding: 272px 100px 206px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-hw-04-bgr-1x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .decision {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-hw-04-bgr-2x.jpg");
+  }
   .decision__title {
     font-size: 44px;
     line-height: 1.36;
