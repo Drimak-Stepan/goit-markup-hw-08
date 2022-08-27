@@ -80,12 +80,8 @@
     .services__item:not(:last-child){
         margin-bottom: 0px;}
         
-        .service__item{width: calc((100% - 60px)/2)
-    }}
+        .services__item{width: calc((100% - 60px)/2);    }}
 
     @media screen and (min-width:1200px){
-
-        
-    
-        .service__item{width: calc((100% - 60px) / 3);}
+        .services__item{width: calc((100% - 60px) / 3);}
     }

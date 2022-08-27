@@ -29,8 +29,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    min-height: 609px;
-    min-width: 450px;
+    max-height: 100%;
+    max-width: 100%;
     padding: 40px;
     display: block;
     justify-content: flex-end;
@@ -69,9 +69,13 @@
     &__coment{margin-bottom: 20px;}
 
 
+    @media screen and (min-width:449px){
+    min-height: 609px;
+    min-width: 450px;}
+
     @media screen and (min-width:1200px){
         min-height: 581px;
-    min-width: 528px;
+        min-width: 528px;
     }
         }
 
