@@ -26,8 +26,7 @@
 
         
     }}
-
-
+   
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .decision{
             background-image: linear-gradient(
@@ -50,7 +49,11 @@
                 to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),url("../images/img-hw-04-bgr-t2x.jpg");    }        }
+
         @media screen and (min-width: 1200px) {
+
+            .decision__title{font-size: 44px;line-height: 1.36}
+
         .decision {
             padding: 272px 100px 206px;
             background-image: linear-gradient(
@@ -65,9 +68,7 @@
                 rgba(47, 48, 58, 0.4)),url("../images/img-hw-04-bgr-2x.jpg"); }  }
 
 
-        @media screen and (min-width: 1200px)   {
-
-                    .decision__title{font-size: 44px;line-height: 1.36}   ; }  
+        
 
 .decision__btn{
     cursor:pointer;
