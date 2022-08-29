@@ -1449,6 +1449,7 @@ main {
   }
   .contact {
     display: block;
+    flex-basis: 0%;
     margin-right: 0;
     margin-bottom: 0;
   }
