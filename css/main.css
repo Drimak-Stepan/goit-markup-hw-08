@@ -1449,7 +1449,7 @@ main {
   }
   .contact {
     display: block;
-    flex-basis: 0%;
+    flex-basis: 50%;
     margin-right: 0;
     margin-bottom: 0;
   }
