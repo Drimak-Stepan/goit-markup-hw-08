@@ -1210,8 +1210,8 @@ main {
   .services__item {
     width: calc((100% - 60px) / 2);
   }
-  .overflow__text {
-    overflow: -moz-hidden-unscrollable;
+  .overflow {
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 1200px) {

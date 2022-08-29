@@ -52,6 +52,7 @@
     padding: 63px 24px;
     transform: translateY(100%);
     transition: transform var(--transition-only);
+    overflow: scroll; 
 
     &__text{
         font-family: $RobS;
@@ -61,7 +62,7 @@
         line-height: 1.56;
         letter-spacing: 0.03em;
         color: #fff;}
-        overflow: scroll;
+        
 
     .services__link:hover &,
     .services__link:focus & {
@@ -83,8 +84,8 @@
         
         .services__item{width: calc((100% - 60px)/2);    }
     
-        .overflow__text{
-            overflow:-moz-hidden-unscrollable;}}
+        .overflow{
+            overflow:hidden;}}
 
     @media screen and (min-width:1200px){
         .services__item{width: calc((100% - 60px) / 3);}
