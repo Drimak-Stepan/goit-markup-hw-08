@@ -215,14 +215,14 @@ margin-bottom: 60px;}
         flex-wrap: nowrap;
         justify-content:flex-start; }
     
-.contact{align-items: flex-start;
-    margin-right: 70px;
+.contact{display:block;
+    margin-right: 0;
     margin-bottom: 0;}
     
 .contact__list{
     align-items: flex-start;}
 
-.soc-footer{flex-basis: 0;
+.soc-footer{
             align-items:flex-start;
             margin-bottom: 0px;}
 
