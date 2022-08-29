@@ -81,7 +81,10 @@
     .services__item:not(:last-child){
         margin-bottom: 0px;}
         
-        .services__item{width: calc((100% - 60px)/2);    }}
+        .services__item{width: calc((100% - 60px)/2);    }
+    
+        .overflow__text{
+            overflow:auto;}}
 
     @media screen and (min-width:1200px){
         .services__item{width: calc((100% - 60px) / 3);}
