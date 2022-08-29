@@ -8,7 +8,11 @@ img {
     max-width: 100%;
     height: auto;
 }
-main{padding-top: 80px;}
+main{padding-top: 60px;}
+
+@media screen and (min-width: 768px){
+    main{ padding-top:80px;}
+}
 
 .no-scroll {
     overflow: hidden;}

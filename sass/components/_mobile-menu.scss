@@ -69,9 +69,14 @@ transition: fill var(--transition-only);
 .mob-menu > .container {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
+    height: 90%;
+    justify-content:space-between;
     overflow: auto;}
+
+    @media screen and (min-width:480px){
+      .mob-menu > .container {
+        height: 100%;
+    }}
 
 
 .mob-menu__item:not(:last-child) {
@@ -98,12 +103,14 @@ transition: fill var(--transition-only);
     margin-bottom: 64px;
   }
   
+
+
   .mob-connect__tel {display: inline-block;
     margin-bottom: 32px;
     font-family: $RobS;
     font-style: $SN;
     font-weight: $SN;
-    font-size: 34px;
+    font-size: 28px;
     line-height: 1.176;
     letter-spacing: 0.02em;
     color: var(--active-color);
@@ -149,7 +156,7 @@ transition: fill var(--transition-only);
         font-family: $RobS;
     font-style: $SN;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 11px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--active-color);
@@ -158,4 +165,13 @@ transition: fill var(--transition-only);
 
     &:focus{outline-color:var(--active-color);}
   }
+
+  @media screen and (min-width:480px){ .mob-soc__link {
+font-size: 18px; } 
+.mob-connect__tel {
+  font-size: 34px;}    
+  }
   
+  .mob-menu__link--current{
+    color: var(--active-color);
+  }
