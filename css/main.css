@@ -1182,7 +1182,7 @@ main {
   padding: 63px 24px;
   transform: translateY(100%);
   transition: transform var(--transition-only);
-  overflow: scroll;
+  overflow: auto;
 }
 .overlow__text {
   font-family: Roboto, sans-serif;
@@ -1209,9 +1209,6 @@ main {
   }
   .services__item {
     width: calc((100% - 60px) / 2);
-  }
-  .overflow {
-    overflow: hidden;
   }
 }
 @media screen and (min-width: 1200px) {
