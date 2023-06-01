@@ -1,18 +1,23 @@
 body {
-    font-family:$RobS;
-    color:var(--accent-color);
+  font-family: $RobS;
+  color: var(--accent-color);
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-main{padding-top: 60px;}
+main {
+  padding-top: 60px;
+}
 
-@media screen and (min-width: 768px){
-    main{ padding-top:80px;}
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: 80px;
+  }
 }
 
 .no-scroll {
-    overflow: hidden;}
+  overflow: hidden;
+}

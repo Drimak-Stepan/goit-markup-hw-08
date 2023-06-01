@@ -1,98 +1,125 @@
-.decision{
-    padding-top: 118px;
-    padding-bottom: 118px;
-    max-width: 1600px;
+.decision {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/img-hw-04-bgr-m1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
     margin-left: auto;
     margin-right: auto;
-    background-color: #C4C4C4;
-    background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),url("../images/img-hw-04-bgr-m1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    &__title{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 1.62;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-
-        
-    }}
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .decision{
-            background-image: linear-gradient(
-                to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),url("../images/img-hw-04-bgr-m2x.jpg");    }      }
-
-        @media screen and (min-width: 768px) {
-        .decision {
-            
-            background-image: linear-gradient(
-                to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),url("../images/img-hw-04-bgr-t1x.jpg");    }    }
-
-        @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-        .decision {
-            background-image: linear-gradient(
-                to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),url("../images/img-hw-04-bgr-t2x.jpg");    }        }
-
-        @media screen and (min-width: 1200px) {
-
-            .decision__title{font-size: 44px;line-height: 1.36}
-
-        .decision {
-            padding-top: 200px;
-            padding-bottom: 200px;
-            background-image: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),url("../images/img-hw-04-bgr-1x.jpg");    }}
-        @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-        .decision {
-            background-image: linear-gradient(
-                to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),url("../images/img-hw-04-bgr-2x.jpg"); }  }
-
-
-        
-
-.decision__btn{
-    cursor:pointer;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 0px 32px;
-    height: 50px;
-    font-family: inherit;
-    font-style: $SN;
-    font-weight: $S7;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background-color: var(--active-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    transition: background-color var(--transition-only);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .decision {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/img-hw-04-bgr-m2x.jpg');
+  }
+}
 
-    &:hover,
-    &:focus{
-        outline:transparent;
-        background-color: #188CE8;}}
+@media screen and (min-width: 768px) {
+  .decision {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/img-hw-04-bgr-t1x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .decision {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/img-hw-04-bgr-t2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .decision__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
+  .decision {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/img-hw-04-bgr-1x.jpg');
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .decision {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/img-hw-04-bgr-2x.jpg');
+  }
+}
+
+.decision__btn {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 0px 32px;
+  height: 50px;
+  font-family: inherit;
+  font-style: $SN;
+  font-weight: $S7;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--active-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transition: background-color var(--transition-only);
+
+  &:hover,
+  &:focus {
+    outline: transparent;
+    background-color: #188ce8;
+  }
+}

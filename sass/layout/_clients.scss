@@ -1,59 +1,61 @@
-.clients__title{
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: $S7;
-    font-size: 28px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--first-title-color);}
+.clients__title {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: $S7;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-title-color);
+}
 
-.clients__list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:30px;
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .clients__item {
-    
-    height: 92px;
-    @media screen and (min-width:320px){width: 210px;}
-    
+  height: 92px;
+  @media screen and (min-width: 320px) {
+    width: 210px;
+  }
 }
 
 .clients__link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        border: 1px solid #AFB1B8;
-        border-radius: 4px;
-        fill: #AFB1B8;
-        transition: border var(--transition-only), fill var(--transition-only);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition: border var(--transition-only), fill var(--transition-only);
 
-        &:hover,
-        &:focus {
-            border: 1px solid var(--active-color);    
-            fill:var(--active-color);
-            outline: transparent; }
-            }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--active-color);
+    fill: var(--active-color);
+    outline: transparent;
+  }
+}
 
-            @media screen and (min-width:768px){
-                .clients__item{
-                    width: calc((100% - 60px) / 3);
-                    }
-        
-            }
-        
-        
-            @media screen and (min-width:1200px){
-        
-        
-                .clients__title{font-size: 36px; 
-                    margin-bottom: 50px;}
-                    
-                .clients__item{width:170px;}
-            }
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .clients__item {
+    width: 170px;
+  }
+}
