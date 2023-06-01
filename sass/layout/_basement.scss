@@ -21,12 +21,12 @@
   outline-color: transparent;
   transition: outline-color var(--transition-only);
 
-  &:focus {
-    outline-color: var(--second-background);
-  }
-
   & span {
     color: var(--active-color);
+  }
+
+  &:focus {
+    outline-color: var(--second-background);
   }
 }
 
